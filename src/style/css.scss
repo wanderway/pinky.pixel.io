@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  min-width: 320px;
+  padding: 0;
+  margin: 0 auto;
+
+  font: 0 $Open-sans_regular;
+}
+
+.container {
+  max-width: 940px;
+  width: 78%;
+  margin: 0 auto;
+
+    @include tablet {
+      width: 91%;
+    }
+
+    @include  mobile {
+      width: auto;
+    }
+}
+
+.download-btn {
+  font: 21px $Open-sans_bold;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  background: transparent;
+
+  transition: .6s;
+
+  &:hover {
+    background: #ffffff;
+    color: #d22856;
+
+    transition: .7s;
+  }
+}
+
+.default-btn {
+  font: 18px $Open-sans_bold;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  color: #ffffff;
+  background: #2aab6d;
+
+  transition: .6s;
+
+  &:hover {
+    background: #1c9b5e;
+
+    transition: .7s;
+  }
+}
+
+.upload-btn {
+  font: 18px $Open-sans_bold;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+
+  color: #d22856;
+  border: 3px solid #d22856;
+  background: transparent;
+
+  transition: .6s;
+
+  &:hover {
+    background: #d22856;
+    color: #ffffff;
+
+    transition: .7s;
+  }
+}

@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="ru">
+  <head>
     <meta charset="UTF-8">
-    <title>_blank</title>
+    <title>Яркий мир с Pinky!</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="header">
+      <div class="main-nav main-nav__items--closed main-nav__items--nojs">
+        <div class="main-nav__wrapper container">
+          <picture class="main-nav__logo">
+            <source media="(max-width: 767px)" srcset="img/logotype-white-mobile.png">
+            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="img/logotype-white-tablet.png">
+            <img src="img/logotype-white-desktop.png" alt="logo-desktop" width="147" height="40">
+          </picture>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__items">
+            <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="#">Фотографии</a></li>
+            <li class="main-nav__item"><a href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
 
-</body>
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function () {
+          if (navMain.classList.contains('main-nav__items--closed')) {
+              navMain.classList.remove('main-nav__items--closed');
+              navMain.classList.add('main-nav__items--opened');
+          } else {
+              navMain.classList.add('main-nav__items--closed');
+              navMain.classList.remove('main-nav__items--opened');
+          }
+      });
+  </script>
+  </body>
 </html>

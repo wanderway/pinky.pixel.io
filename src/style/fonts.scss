@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Open-sans_regular';
+  src:  url('../fonts/Open Sans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open-sans_bold';
+  src:  url('../fonts/Open Sans/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro_regular';
+  src:  url('../fonts/MyriadPro/MyriadPro-Regular.ttf') format('truetype'),
+  url('../fonts/MyriadPro/MyriadPro-Regular.eot') format('eot'),
+  url('../fonts/MyriadPro/MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro_bold';
+  src:  url('../fonts/MyriadPro/MyriadPro-Bold.ttf') format('truetype'),
+  url('../fonts/MyriadPro/MyriadPro-Bold.eot') format('eot'),
+  url('../fonts/MyriadPro/MyriadPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
