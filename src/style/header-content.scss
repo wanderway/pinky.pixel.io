@@ -1,0 +1,55 @@
+.header-content {
+  background: url("../img/iphonx-6.png") no-repeat 90% bottom;
+  height: 740px;
+
+  &__wrapper {
+    width: 32%;
+    padding: 100px 0 0 0;
+
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 0 50px 0;
+
+    font: 50px $Open-sans-light;
+
+    color: #ffffff;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin: 60px 0;
+  }
+
+  &__image {
+    display: block;
+    width: 56px;
+    height: 56px;
+  }
+
+  &__image--apple {
+    background: url("../img/header-content__logos.png") -10px -10px;
+  }
+
+  &__image--android {
+    background: url("../img/header-content__logos.png") -86px -5px;
+  }
+
+  &__image--win {
+    background: url("../img/header-content__logos.png") -162px -5px;
+  }
+
+  &__text {
+    font: 18px $Open-sans_light;
+
+    color: #ffffff;
+  }
+}

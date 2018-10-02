@@ -13,6 +13,13 @@
 }
 
 @font-face {
+  font-family: 'Open-sans_light';
+  src:  url('../fonts/Open Sans/OpenSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'MyriadPro_regular';
   src:  url('../fonts/MyriadPro/MyriadPro-Regular.ttf') format('truetype'),
   url('../fonts/MyriadPro/MyriadPro-Regular.eot') format('eot'),
