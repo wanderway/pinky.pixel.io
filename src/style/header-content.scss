@@ -53,3 +53,58 @@
     color: #ffffff;
   }
 }
+
+@include tablet {
+
+  .header-content {
+
+    &__title {
+      width: 190px;
+      font-size: 40px;
+      margin: 0 auto 50px;
+    }
+
+    &__wrapper {
+      width: 45%;
+      height: 597px;
+    }
+  }
+}
+
+@include mobile {
+
+  .header-content {
+    height: auto;
+    padding-top: 365px;
+
+    background: url("../img/iphone-5-in-hand-mobile.png") no-repeat center 55px;
+
+    &__wrapper {
+      width: auto;
+      height: 272px;
+      margin: 0 auto;
+      padding: 30px 0;
+
+      background: #1d2631;
+    }
+
+    &__title {
+      display: none;
+    }
+
+    &__btn {
+      width: 90%;
+    }
+
+    &__text {
+      width: 80%;
+      margin: 0 auto;
+
+      font-size: 14px;
+    }
+
+    &__images {
+      margin:  30px 0;
+    }
+  }
+}
