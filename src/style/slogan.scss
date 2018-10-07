@@ -1,0 +1,43 @@
+.slogan {
+
+  padding: 50px 0;
+
+  background: #ffffff;
+
+
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__main-title {
+    margin: 0 auto;
+
+    font: 50px $Open-sans_light;
+
+    background: #ffffff;
+  }
+}
+
+@include tablet {
+  .slogan {
+
+    &__main-title {
+      font-size: 40px;
+    }
+  }
+}
+
+@include mobile {
+  .slogan {
+    padding: 40px 0;
+
+    &__main-title {
+      font-size: 24px;
+
+      span {
+        display: block;
+      }
+    }
+  }
+}
