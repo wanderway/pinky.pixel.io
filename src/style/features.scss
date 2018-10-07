@@ -1,0 +1,84 @@
+.features {
+  background: #f2f2f2;
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__wrapper {
+    padding: 50px 0;
+
+  }
+
+  &__item {
+    flex-basis: calc(100% / 3);
+
+    font: 18px $MyriadPro_regular;
+    text-align: center;
+  }
+
+  &__item-image {
+    width: 186px;
+    height: 382px;
+    margin: 0 auto;
+
+    background: url("../img/mobile-sprite-features-block.png");
+  }
+
+  &__item-image--black-white {
+    background-position: -20px -20px;
+  }
+
+  &__item-image--no-smile {
+    background-position: -246px -20px;
+  }
+
+  &__item-image--with-smile {
+    background-position: -472px -20px;
+  }
+
+  &__item-name {
+    margin: 20px 0;
+
+    font: 30px $MyriadPro_bold;
+    line-height: 30px;
+  }
+
+  &__item-text {
+    margin: 0 auto;
+  }
+
+  &__effect {
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+  }
+
+  &__clock-image {
+    flex-basis: 40%;
+    height: 345px;
+    background: url("../img/timer.png") no-repeat left center;
+  }
+
+  &__effect-wrapper {
+    padding-top: 100px;
+    flex-basis: 60%;
+
+    font: 18px $MyriadPro_regular;
+    line-height: 30px;
+  }
+
+  &__effect-title {
+    font: 30px $MyriadPro_bold;
+  }
+
+  &__effect-text {
+    margin: 25px 0;
+  }
+
+  &__more-info {
+    color: #d22856;
+  }
+}
+
