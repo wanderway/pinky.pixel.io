@@ -39,7 +39,7 @@ var path = {
     },
     watch: {
         html: 'src/*.html',
-        js: 'src/js/*.js',
+        js: 'src/js/**/*.js',
         style: 'src/style/*.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
@@ -117,4 +117,4 @@ gulp.task('watch', function () {
     gulp.watch([path.watch.fonts], gulp.series('fonts'));
 });
 
-gulp.task('dev', gulp.series('clean', gulp.parallel('webserver', 'watch')));
+gulp.task('dev', gulp.series('clean', 'build', gulp.parallel('webserver', 'watch')));
