@@ -71,6 +71,10 @@
 
   &__effect-title {
     font: 30px $MyriadPro_bold;
+
+    br {
+      display: none;
+    }
   }
 
   &__effect-text {
@@ -80,5 +84,127 @@
   &__more-info {
     color: #d22856;
   }
+
+  &__phone-image-for-adaptive {
+    display: none;
+  }
 }
+
+@include tablet {
+
+  .features {
+
+    &__item-image {
+      display: none;
+    }
+    &__phone-image-for-adaptive {
+      position: absolute;
+
+      display: block;
+      height: 548px;
+      width: 40%;
+
+      background: url("../img/mobile-tablet-features-block-iphone.png") no-repeat;
+    }
+
+    &__items {
+      flex-direction: column;
+      width: 60%;
+      margin: 0 0 50px auto;
+      height: 548px;
+      padding: 20px 0 20px 5%;
+    }
+
+    &__item {
+      text-align: left;
+    }
+
+    &__item-name {
+      font-size: 22px;
+      margin: 40px 0 20px 0;
+
+      br {
+        display: none;
+      }
+    }
+
+    &__item-text {
+      font-size: 18px;
+
+      br {
+        display: none;
+      }
+    }
+
+    &__effect {
+      padding: 0;
+    }
+
+    &__clock-image {
+      background-size: 270px;
+    }
+
+    &__effect-wrapper {
+      padding: 50px 0 0 5%;
+    }
+
+    &__effect-title {
+
+      br {
+        display: block;
+      }
+    }
+
+    &__effect-text {
+
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+@include mobile {
+
+  .features {
+    height: 840px;
+    position: relative;
+
+    &__effect {
+      display: none;
+    }
+
+    &__items {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0;
+      height: 400px;
+    }
+
+    &__item {
+      text-align: center;
+    }
+
+    &__wrapper {
+      padding: 0;
+      height: 840px;
+    }
+
+    &__phone-image-for-adaptive {
+      bottom: 0;
+      height: 400px;
+      width: 100%;
+
+      background-position: center 0;
+    }
+
+    &__item-name {
+      margin: 20px 0 10px 0;
+    }
+  }
+
+}
+
+
+
 
