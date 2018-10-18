@@ -14,3 +14,16 @@ navToggle.addEventListener('click', function () {
 });
 
 
+// $('.feedback__slider-wrapper').slick({
+//     settings: 'unslick',
+//     responsive: [
+//         {
+//             breakpoint: 5000,
+//             settings: {
+//                 dots: true,
+//                 arrows: true,
+//                 autoplay: false
+//             }
+//         }
+//     ]
+// });
